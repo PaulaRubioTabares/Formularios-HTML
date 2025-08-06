@@ -204,6 +204,45 @@
         </section>
 <hr>
 
+<!-- Listas en Formularios -->
+        <h2>Lista en formularios</h2>
+        <p>Otró de los elementos de un formulario es la lista desplegable, se crea con la etiqueta <strong>select</strong> y dentro de ella cada opción va con la etiqueta <strong>option</strong> </p>
+                <!-- Lista desplegable 1 -->
+        <h3>Lista desplegable</h3>
+        <section>
+            <select name="desplegable" id="desplegable">
+                <option value="opción">Opción 1</option>
+                <option value="opción">Opción 2</option>
+                <option value="opción">Opción 3</option>
+                <option value="opción">Opción 4</option>
+            </select>
+        </section>
+        
+        <p>También se puede usar agrupando opciones en un tema:</p>
+                <!-- Lista desplegable 2 -->
+        <section>
+            <select name="Desplegabledos" id="desplegabledos">
+                <optgroup label="HTML">
+                    <option value="HTML">HTML5</option>
+                    <option value="HTML">JS</option>
+                </optgroup>
+
+                <optgroup label="CSS">
+                    <option value="CSS">Decoración página web</option>
+                    <option value="CSS">Texto de la lista JS</option>
+                </optgroup>
+            </select>
+        </section>
+<hr>
+                <!-- Lista selección múltiple -->
+        <h3>Lista Selección Múltiple</h3>
+        <p>Otro tipo de listas que se pueden agregar a los formularios son las de selección múltiple, esto manteniendo el clic y arrastrando el mouse por las opciones a elegir, para ello la etiqueta seria: <strong>select multiple="multiple"</strong> </p>
+        <select multiple="multiple"> <!-- se seleccionan varios elementos -->
+            <option value="HTML">texto de la lista HTML</option>
+            <option value="CSS">texto de la lista SCC</option>
+            <option value="JS">texto de la lista JS</option>
+        </select>
     </form>
+    
 </body>
 </html>
