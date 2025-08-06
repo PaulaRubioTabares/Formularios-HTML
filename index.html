@@ -31,8 +31,77 @@
         <li>input type="range"</li>
     </ul>
     <p>Ahora como se verían, respectivamente</p>
+
     <!-- Tipos de input-->
+    <form action="/formulario" method="get"> 
+        <section>
+            <label for="nombre">Nombre</label> <!-- En label debe ir for y en input debe ir id, con el mismo valor --> 
+            <input type="text" id="nombre" placeholder="Paula" name="nombre"> <!-- name es para indicar en el servidor que dato es -->
+        </section>
+<br>
+        <section>
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña" placeholder="Abc123" name="contraseña">
+        </section>
+<br>
+        <section>
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" placeholder="+57-31698*****" name="telefono">
+        </section>
+<br>
+        <section>
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" placeholder="***@email" name="correo">
+        </section>
+<br>
+        <section>
+            <label for="enlace">Enlace Web</label>
+            <input type="url" id="enlace" placeholder="https:" name="enlace">
+        </section>
+<br>
+        <section>
+            <label for="numero">Número</label>
+            <input type="number" id="numero" placeholder="123" name="numero">
+        </section>
+<br>
+        <section>
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" placeholder="01-07-2025" name="fecha">
+            </section>
+<br>
+        <section>
+            <label for="color">Color</label>
+            <input type="color" id="color" name="color">
+            </section>
+<br>
+        <section>
+            <label for="buscar">Buscar</label>
+            <input type="search" id="buscar" placeholder="Titulo" name="buscar">
+        </section>
+<br>
+        <section>
+            <label for="rango">Rango de Números</label>
+            <input type="range" id="rango" name="rango">
+        </section>
+<hr>
 
+<!-- Separación -->
+        <h2>Agrupar datos</h2>
+        <p>Otra característica de los formularios es que con la etiqueta <strong>fieldset</strong> junto a la etiqueta <strong>legend</strong> se puede delimitar y/o agrupar visualmente elementos</p>
 
+        <fieldset> 
+            <legend>Datos personales</legend>
+            <section>
+                <label for="nombre1">Nombre</label>
+                <input type="text" id="nombre1" name="nombre1" placeholder="Paula">
+            </section>
+            <br>
+            <search>
+                <label for="apellido">Apellido</label>
+                <input type="apellido" id="apellido" name="apellido" placeholder="Paula"> 
+            </search>
+        </fieldset>
+<hr>
+    </form>
 </body>
 </html>
