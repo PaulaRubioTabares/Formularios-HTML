@@ -102,6 +102,7 @@
             </search>
         </fieldset>
 <hr>
+
 <!-- Casilla a seleccionar -->
         <h2>Casillas</h2>
         <p>Input también puede ser una casilla de seleccionar, hay de dos tipos:</p>
@@ -141,6 +142,39 @@
             <input type="radio" id="casilla" name="casilla"> <br>
         <p>En el caso del input de seleccionar una sola casilla, se debe tener en cuenta que todas las opciones deben tener el mismo id y el mismo name</p>
 <hr>
+
+<!-- Agrupar casillas -->
+        <h2>Agrpando casillas</h2>
+        <fieldset>
+            <legend>Varias Opciones</legend>
+            <input type="checkbox" name="cuadrado" value="Bajo"/>            <label for="cuadrado">Bajo</label> <br> 
+            <input type="checkbox" name="cuadrado" value="Medio"/>          <label for="cuadrado">Medio</label> <br>
+            <input type="checkbox" name="cuadrado" value="Alto"/>           <label for="cuadrado">Alto</label> <br>
+            <input type="checkbox" name="cuadrado" value="Superior"/>       <label for="cuadrado">Superior</label> <br>
+        </fieldset>
+        <br>
+        <fieldset> 
+            <legend>Selección unica</legend>
+            <input type="radio" name="casilla"/> Si <br>
+            <input type="radio" name="casilla"/> No <br>
+            <input type="radio" name="casilla"> Tal vez <br>
+        </fieldset>
+
+<hr>
+<!-- Textarea -->
+        <h2>Cuadro de texto</h2>
+        <p>En los formularios también existe una etiqueta la cual es <strong>textarea</strong> y sirve para dejar un cuadro en donde el usuario puede escribir</p>
+        <section>
+            <label for="comentario">Comentario</label>
+            <textarea name="comentario" id="comentario" placeholder="Ingrese su comentario"></textarea>
+        </section>
+        <p>Este cuadro puede ser ajustado al tamaño deseado usando las etiquetas <strong>rows</strong>(filas) o <strong>cols</strong> (columnas)</p>
+        <section>
+            <label for="comentariodos">Comentario</label> <br>
+            <textarea rows="10" cols="55" name="comentariodos" id="comentariodos" placeholder="Ingrese su comentario"></textarea>
+        </section>
+<hr>
+
     </form>
 </body>
 </html>
